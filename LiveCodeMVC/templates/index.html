@@ -47,13 +47,37 @@
         <div><h2>Rekomendari Product</h2></div>
         <div></div>
     </section>
-    {% for item in page_obj %}
+    {% for item in obj_mobil %}
     <section>
       <div class="container">
         <div class="row">
           <div>
-            <div> {{ item.images.productmobil }} </div>
-            <div></div>
+            <div> {{ item.images }} </div>
+            <div> {{ item.name }} </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {% endfor %}
+    {% for item in obj_motor %}
+    <section>
+      <div class="container">
+        <div class="row">
+          <div>
+            <div> {{ item.images }} </div>
+            <div> {{ item.name }} </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {% endfor %}
+    {% for item in obj_electronics %}
+    <section>
+      <div class="container">
+        <div class="row">
+          <div>
+            <div> {{ item.images }} </div>
+            <div> {{ item.name }} </div>
           </div>
         </div>
       </div>
